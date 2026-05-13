@@ -10,7 +10,7 @@ public record AgendamentoRequestDTO(
 
     @NotBlank String requisitante,
     @NotBlank String cargo,
-    @NotNull String veiculoId,
+    @NotNull Long veiculoId,
     @NotNull @Future LocalDateTime dataInicio,
     @NotNull LocalDateTime dataFim
 ) {
