@@ -9,5 +9,5 @@ import com.camara.veiculo.entity.Veiculo;
 public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
 
 
-  List<Veiculo> findAllByAtivoTrue(boolean ativo);
+  List<Veiculo> findAllByAtivoTrue();
 }

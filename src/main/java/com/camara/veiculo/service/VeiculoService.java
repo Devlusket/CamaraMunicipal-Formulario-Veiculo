@@ -20,7 +20,7 @@ public class VeiculoService {
   private final VeiculoRepository veiculoRepository;
 
   public List<VeiculoResponseDTO> listarAtivos() {
-    return veiculoRepository.findAllByAtivoTrue(true)
+    return veiculoRepository.findAllByAtivoTrue()
       .stream()
       .map(VeiculoResponseDTO::fromEntity)
       .toList();
